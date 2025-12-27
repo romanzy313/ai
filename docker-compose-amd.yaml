@@ -21,13 +21,13 @@ services:
       - OLLAMA_HOST=0.0.0.0
       # Keep models loaded in memory for 5 minutes after last use
       - OLLAMA_KEEP_ALIVE=10m
+      - OLLAMA_NOHISTORY=1
       # Flash attention (0=disabled, 1=enabled but experimental)
       - OLLAMA_FLASH_ATTENTION=0
       - OLLAMA_NUM_PARALLEL=2
       - OLLAMA_MAX_LOADED_MODELS=1
-      # 4gb overhead on the GPU
-      - OLLAMA_GPU_OVERHEAD=4000000000
-      - OLLAMA_NOHISTORY=1
+      # 1gb overhead on the GPU
+      - OLLAMA_GPU_OVERHEAD=1000000000
     # wierd params from
     # https://github.com/avnigashi/ollama-rocm-docker/blob/main/docker-compose.yml
     group_add:

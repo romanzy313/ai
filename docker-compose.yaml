@@ -18,12 +18,10 @@ services:
       # Keep models loaded in memory for 5 minutes after last use
       - OLLAMA_KEEP_ALIVE=10m
       # Flash attention (0=disabled, 1=enabled but experimental)
+      - OLLAMA_NOHISTORY=1
       - OLLAMA_FLASH_ATTENTION=0
       - OLLAMA_NUM_PARALLEL=2
       - OLLAMA_MAX_LOADED_MODELS=1
-      # 1gb overhead on the GPU (not used here)
-      - OLLAMA_GPU_OVERHEAD=1073741824
-      - OLLAMA_NOHISTORY=1
       # - OLLAMA_FORCE_CPU=1
   open-webui:
     image: ghcr.io/open-webui/open-webui:main
