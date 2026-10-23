@@ -1,0 +1,4 @@
+FROM jetelain/Qwen3.5-9B:latest
+PARAMETER num_ctx 32768
+PARAMETER num_batch 128
+PARAMETER draft_num_predict 0

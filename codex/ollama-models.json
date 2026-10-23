@@ -27,6 +27,146 @@
             "supports_search_tool": false,
             "use_responses_lite": false,
             "experimental_supported_tools": []
+        },
+        {
+            "slug": "qwen3.5-4b-32k",
+            "display_name": "Qwen3.5 4B (32K)",
+            "description": "Local Ollama Q4_K_M model with 32,768 tokens of context.",
+            "default_reasoning_level": "none",
+            "supported_reasoning_levels": [],
+            "shell_type": "unified_exec",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 1,
+            "upgrade": null,
+            "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
+            "supports_reasoning_summaries": false,
+            "support_verbosity": false,
+            "truncation_policy": {
+                "mode": "tokens",
+                "limit": 8192
+            },
+            "context_window": 32768,
+            "max_context_window": 32768,
+            "effective_context_window_percent": 95,
+            "input_modalities": [
+                "text"
+            ],
+            "supports_search_tool": false,
+            "use_responses_lite": false,
+            "experimental_supported_tools": []
+        },
+        {
+            "slug": "qwen3.5-4b-64k",
+            "display_name": "Qwen3.5 4B (64K)",
+            "description": "Local Ollama Q4_K_M model with 65,536 tokens of context.",
+            "default_reasoning_level": "none",
+            "supported_reasoning_levels": [],
+            "shell_type": "unified_exec",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 2,
+            "upgrade": null,
+            "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
+            "supports_reasoning_summaries": false,
+            "support_verbosity": false,
+            "truncation_policy": {
+                "mode": "tokens",
+                "limit": 10000
+            },
+            "context_window": 65536,
+            "max_context_window": 65536,
+            "effective_context_window_percent": 95,
+            "input_modalities": [
+                "text"
+            ],
+            "supports_search_tool": false,
+            "use_responses_lite": false,
+            "experimental_supported_tools": []
+        },
+        {
+            "slug": "qwen3.5-9b-16k",
+            "display_name": "Qwen3.5 9B (16K)",
+            "description": "Local Ollama Q4_K_M model with 16,384 tokens of context.",
+            "default_reasoning_level": "none",
+            "supported_reasoning_levels": [],
+            "shell_type": "unified_exec",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 3,
+            "upgrade": null,
+            "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
+            "supports_reasoning_summaries": false,
+            "support_verbosity": false,
+            "truncation_policy": {
+                "mode": "tokens",
+                "limit": 4096
+            },
+            "context_window": 16384,
+            "max_context_window": 16384,
+            "effective_context_window_percent": 95,
+            "input_modalities": [
+                "text"
+            ],
+            "supports_search_tool": false,
+            "use_responses_lite": false,
+            "experimental_supported_tools": []
+        },
+        {
+            "slug": "qwen3.5-9b-32k",
+            "display_name": "Qwen3.5 9B (32K)",
+            "description": "Local Ollama Q4_K_M model with 32,768 tokens of context.",
+            "default_reasoning_level": "none",
+            "supported_reasoning_levels": [],
+            "shell_type": "unified_exec",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 4,
+            "upgrade": null,
+            "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
+            "supports_reasoning_summaries": false,
+            "support_verbosity": false,
+            "truncation_policy": {
+                "mode": "tokens",
+                "limit": 8192
+            },
+            "context_window": 32768,
+            "max_context_window": 32768,
+            "effective_context_window_percent": 95,
+            "input_modalities": [
+                "text"
+            ],
+            "supports_search_tool": false,
+            "use_responses_lite": false,
+            "experimental_supported_tools": []
+        },
+        {
+            "slug": "qwen3.5-9b-64k",
+            "display_name": "Qwen3.5 9B (64K)",
+            "description": "Local Ollama Q4_K_M model with 65,536 tokens of context.",
+            "default_reasoning_level": "none",
+            "supported_reasoning_levels": [],
+            "shell_type": "unified_exec",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 5,
+            "upgrade": null,
+            "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
+            "supports_reasoning_summaries": false,
+            "support_verbosity": false,
+            "truncation_policy": {
+                "mode": "tokens",
+                "limit": 10000
+            },
+            "context_window": 65536,
+            "max_context_window": 65536,
+            "effective_context_window_percent": 95,
+            "input_modalities": [
+                "text"
+            ],
+            "supports_search_tool": false,
+            "use_responses_lite": false,
+            "experimental_supported_tools": []
         }
     ]
 }
