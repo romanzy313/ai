@@ -53,6 +53,13 @@ their usual model lists. Thinking mode is also implemented, but its super slow.
 
 ## Keep small models focused
 
+The GPU catalog's shortened base prompt is also stored in
+[codex/short-instruction.txt](codex/short-instruction.txt) for readability. Keep that file
+and every `base_instructions` entry in `codex/ollama-models.json` identical.
+
+The full official prompt used by `codex/oss-models.json` is duplicated in
+[codex/official-instruction.txt](codex/official-instruction.txt).
+
 Use [codex/AGENTS.md](codex/AGENTS.md) as a starting point for a project's root
 `AGENTS.md`. It makes small models behave better.
 
