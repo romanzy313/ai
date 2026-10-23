@@ -1,0 +1,32 @@
+{
+    "models": [
+        {
+            "slug": "qwen3.5-4b-16k",
+            "display_name": "Qwen3.5 4B (16K)",
+            "description": "Local Ollama Q4_K_M model with 16,384 tokens of context.",
+            "default_reasoning_level": "none",
+            "supported_reasoning_levels": [],
+            "shell_type": "unified_exec",
+            "visibility": "list",
+            "supported_in_api": true,
+            "priority": 0,
+            "upgrade": null,
+            "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
+            "supports_reasoning_summaries": false,
+            "support_verbosity": false,
+            "truncation_policy": {
+                "mode": "tokens",
+                "limit": 4096
+            },
+            "context_window": 16384,
+            "max_context_window": 16384,
+            "effective_context_window_percent": 95,
+            "input_modalities": [
+                "text"
+            ],
+            "supports_search_tool": false,
+            "use_responses_lite": false,
+            "experimental_supported_tools": []
+        }
+    ]
+}

@@ -20,7 +20,7 @@ services:
     environment:
       - OLLAMA_HOST=0.0.0.0
       # Keep models loaded in memory for 5 minutes after last use
-      - OLLAMA_KEEP_ALIVE=10m
+      - OLLAMA_KEEP_ALIVE=5m
       - OLLAMA_NOHISTORY=1
       # Flash attention (0=disabled, 1=enabled but experimental)
       - OLLAMA_FLASH_ATTENTION=0
