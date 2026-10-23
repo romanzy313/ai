@@ -1,5 +1,5 @@
 web_search = "disabled"
-model_catalog_json = "ollama-models.json"
+model_catalog_json = "~/.codex/ollama-models.json"
 model = "qwen3.5-4b-16k"
 model_provider = "ollama-remote"
 model_reasoning_effort = "none"

@@ -40,22 +40,6 @@ configuration and model catalog on the machine running Codex:
 ./install-codex-configs.sh
 ```
 
-This overwrites `gpu.config.toml` and `ollama-models.json` in `~/.codex/` (or
-`$CODEX_HOME` when set). The script sets the catalog path to its absolute
-installation path. It requires Python 3.
-
-Edit `codex/gpu.config.toml` to change the server address or default model. The
-profile disables web search, app connectors (including Sites), plugins, memory
-generation and use, analytics, feedback submission, and OpenTelemetry export.
-Local memory storage does not by itself guarantee local processing: memory
-generation can involve model requests. These settings do not enforce a network
-block on the Codex process or its shell commands.
-
-The catalog includes all six Qwen3.5 variants listed above. To add another
-model, copy an entry in `codex/ollama-models.json`, set its `slug` to the Ollama
-model name, and adjust its display name, description, and context limits. Run
-`./install-codex-configs.sh` again and restart Codex to load the changes.
-
 Start Codex with this profile:
 
 ```bash
