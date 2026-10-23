@@ -7,12 +7,12 @@ Uncomment Open WebUI to run it.
 
 # Custom Models
 
-The `models/` directory contains Qwen3.5 4B and 9B variants with 16K, 32K,
-and 64K contexts. Each uses a batch size of 128 and disables speculative
-decoding to reduce memory usage.
+The `models/` directory contains Qwen3.5 4B and 9B variants with 16K, 32K, and
+64K contexts. Each uses a batch size of 128 and disables speculative decoding to
+reduce memory usage.
 
-| Base model | Variants |
-| --- | --- |
+| Base model                   | Variants                                             |
+| ---------------------------- | ---------------------------------------------------- |
 | `jetelain/Qwen3.5-4B:latest` | `qwen3.5-4b-16k`, `qwen3.5-4b-32k`, `qwen3.5-4b-64k` |
 | `jetelain/Qwen3.5-9B:latest` | `qwen3.5-9b-16k`, `qwen3.5-9b-32k`, `qwen3.5-9b-64k` |
 
@@ -33,27 +33,27 @@ models with the same names:
 
 # Codex Integration
 
-Codex can connect to the AMD Ollama server using the `gpu` profile. Install
-its configuration and model catalog on the machine running Codex:
+Codex can connect to the AMD Ollama server using the `gpu` profile. Install its
+configuration and model catalog on the machine running Codex:
 
 ```bash
 ./install-codex-configs.sh
 ```
 
-This overwrites `gpu.config.toml` and `ollama-models.json` in `~/.codex/`
-(or `$CODEX_HOME` when set). The script sets the catalog path to its absolute
+This overwrites `gpu.config.toml` and `ollama-models.json` in `~/.codex/` (or
+`$CODEX_HOME` when set). The script sets the catalog path to its absolute
 installation path. It requires Python 3.
 
-Edit `codex/gpu.config.toml` to change the server address or default model.
-The profile disables web search, app connectors (including Sites), plugins,
-memory generation and use, analytics, feedback submission, and OpenTelemetry
-export. Local memory storage does not by itself guarantee local processing:
-memory generation can involve model requests. These settings do not enforce
-a network block on the Codex process or its shell commands.
+Edit `codex/gpu.config.toml` to change the server address or default model. The
+profile disables web search, app connectors (including Sites), plugins, memory
+generation and use, analytics, feedback submission, and OpenTelemetry export.
+Local memory storage does not by itself guarantee local processing: memory
+generation can involve model requests. These settings do not enforce a network
+block on the Codex process or its shell commands.
 
-The catalog includes all six Qwen3.5 variants listed above. To add another model,
-copy an entry in `codex/ollama-models.json`, set its `slug` to the Ollama model
-name, and adjust its display name, description, and context limits. Run
+The catalog includes all six Qwen3.5 variants listed above. To add another
+model, copy an entry in `codex/ollama-models.json`, set its `slug` to the Ollama
+model name, and adjust its display name, description, and context limits. Run
 `./install-codex-configs.sh` again and restart Codex to load the changes.
 
 Start Codex with this profile:
@@ -71,6 +71,13 @@ To use another model after importing it:
 ```bash
 codex -p gpu -m qwen3.5-whatever
 ```
+
+## Keep small models focused
+
+Use [codex/AGENTS.md](codex/AGENTS.md) as a starting point for a project's root
+`AGENTS.md`. It limits work to the user's request and explicitly excludes
+unrequested cleanup and TODO/FIXME tasks. If the project already has an
+`AGENTS.md`, merge the relevant rules into it instead of overwriting it.
 
 # Models I Recommend
 
