@@ -40,21 +40,16 @@ configuration and model catalog on the machine running Codex:
 ./install-codex-configs.sh
 ```
 
-Start Codex with this profile:
+Start Codex with these profiles:
 
 ```bash
 codex -p gpu
+codex -p oss
 ```
 
 Use `/model` inside Codex to select a model from the local catalog. The catalog
 replaces the built-in model list for the `gpu` profile; other profiles keep
 their usual model lists. Thinking mode is also implemented, but its super slow.
-
-To use another model after importing it:
-
-```bash
-codex -p gpu -m qwen3.5-whatever
-```
 
 ## Keep small models focused
 

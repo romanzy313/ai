@@ -1,0 +1,35 @@
+web_search = "disabled"
+check_for_update_on_startup = false
+model = "gpt-oss:20b"
+model_catalog_json = "~/.codex/oss-models.json"
+model_provider = "ollama-remote"
+# GPT-OSS cannot disable thinking; low is its minimum supported effort.
+model_reasoning_effort = "low"
+model_supports_reasoning_summaries = true
+
+[model_providers.ollama-remote]
+name = "Ollama"
+base_url = "http://desktop.home.internal:11434/v1"
+wire_api = "responses"
+requires_openai_auth = false
+
+[features]
+apps = false
+plugins = false
+memories = false
+
+[memories]
+generate_memories = false
+use_memories = false
+
+[analytics]
+enabled = false
+
+[feedback]
+enabled = false
+
+[otel]
+exporter = "none"
+trace_exporter = "none"
+metrics_exporter = "none"
+log_user_prompt = false
