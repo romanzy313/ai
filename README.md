@@ -48,7 +48,7 @@ codex -p gpu
 
 Use `/model` inside Codex to select a model from the local catalog. The catalog
 replaces the built-in model list for the `gpu` profile; other profiles keep
-their usual model lists.
+their usual model lists. Thinking mode is also implemented, but its super slow.
 
 To use another model after importing it:
 
@@ -59,9 +59,7 @@ codex -p gpu -m qwen3.5-whatever
 ## Keep small models focused
 
 Use [codex/AGENTS.md](codex/AGENTS.md) as a starting point for a project's root
-`AGENTS.md`. It limits work to the user's request and explicitly excludes
-unrequested cleanup and TODO/FIXME tasks. If the project already has an
-`AGENTS.md`, merge the relevant rules into it instead of overwriting it.
+`AGENTS.md`. It makes small models behave better.
 
 # Models I Recommend
 

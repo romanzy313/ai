@@ -5,14 +5,23 @@
             "display_name": "Qwen3.5 4B (16K)",
             "description": "Local Ollama Q4_K_M model with 16,384 tokens of context.",
             "default_reasoning_level": "none",
-            "supported_reasoning_levels": [],
+            "supported_reasoning_levels": [
+                {
+                    "effort": "none",
+                    "description": "Thinking off: respond directly."
+                },
+                {
+                    "effort": "medium",
+                    "description": "Thinking on: reason before answering."
+                }
+            ],
             "shell_type": "unified_exec",
             "visibility": "list",
             "supported_in_api": true,
             "priority": 0,
             "upgrade": null,
             "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
-            "supports_reasoning_summaries": false,
+            "supports_reasoning_summaries": true,
             "support_verbosity": false,
             "truncation_policy": {
                 "mode": "tokens",
@@ -33,14 +42,23 @@
             "display_name": "Qwen3.5 4B (32K)",
             "description": "Local Ollama Q4_K_M model with 32,768 tokens of context.",
             "default_reasoning_level": "none",
-            "supported_reasoning_levels": [],
+            "supported_reasoning_levels": [
+                {
+                    "effort": "none",
+                    "description": "Thinking off: respond directly."
+                },
+                {
+                    "effort": "medium",
+                    "description": "Thinking on: reason before answering."
+                }
+            ],
             "shell_type": "unified_exec",
             "visibility": "list",
             "supported_in_api": true,
             "priority": 1,
             "upgrade": null,
             "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
-            "supports_reasoning_summaries": false,
+            "supports_reasoning_summaries": true,
             "support_verbosity": false,
             "truncation_policy": {
                 "mode": "tokens",
@@ -61,14 +79,23 @@
             "display_name": "Qwen3.5 4B (64K)",
             "description": "Local Ollama Q4_K_M model with 65,536 tokens of context.",
             "default_reasoning_level": "none",
-            "supported_reasoning_levels": [],
+            "supported_reasoning_levels": [
+                {
+                    "effort": "none",
+                    "description": "Thinking off: respond directly."
+                },
+                {
+                    "effort": "medium",
+                    "description": "Thinking on: reason before answering."
+                }
+            ],
             "shell_type": "unified_exec",
             "visibility": "list",
             "supported_in_api": true,
             "priority": 2,
             "upgrade": null,
             "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
-            "supports_reasoning_summaries": false,
+            "supports_reasoning_summaries": true,
             "support_verbosity": false,
             "truncation_policy": {
                 "mode": "tokens",
@@ -89,14 +116,23 @@
             "display_name": "Qwen3.5 9B (16K)",
             "description": "Local Ollama Q4_K_M model with 16,384 tokens of context.",
             "default_reasoning_level": "none",
-            "supported_reasoning_levels": [],
+            "supported_reasoning_levels": [
+                {
+                    "effort": "none",
+                    "description": "Thinking off: respond directly."
+                },
+                {
+                    "effort": "medium",
+                    "description": "Thinking on: reason before answering."
+                }
+            ],
             "shell_type": "unified_exec",
             "visibility": "list",
             "supported_in_api": true,
             "priority": 3,
             "upgrade": null,
             "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
-            "supports_reasoning_summaries": false,
+            "supports_reasoning_summaries": true,
             "support_verbosity": false,
             "truncation_policy": {
                 "mode": "tokens",
@@ -117,14 +153,23 @@
             "display_name": "Qwen3.5 9B (32K)",
             "description": "Local Ollama Q4_K_M model with 32,768 tokens of context.",
             "default_reasoning_level": "none",
-            "supported_reasoning_levels": [],
+            "supported_reasoning_levels": [
+                {
+                    "effort": "none",
+                    "description": "Thinking off: respond directly."
+                },
+                {
+                    "effort": "medium",
+                    "description": "Thinking on: reason before answering."
+                }
+            ],
             "shell_type": "unified_exec",
             "visibility": "list",
             "supported_in_api": true,
             "priority": 4,
             "upgrade": null,
             "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
-            "supports_reasoning_summaries": false,
+            "supports_reasoning_summaries": true,
             "support_verbosity": false,
             "truncation_policy": {
                 "mode": "tokens",
@@ -145,14 +190,23 @@
             "display_name": "Qwen3.5 9B (64K)",
             "description": "Local Ollama Q4_K_M model with 65,536 tokens of context.",
             "default_reasoning_level": "none",
-            "supported_reasoning_levels": [],
+            "supported_reasoning_levels": [
+                {
+                    "effort": "none",
+                    "description": "Thinking off: respond directly."
+                },
+                {
+                    "effort": "medium",
+                    "description": "Thinking on: reason before answering."
+                }
+            ],
             "shell_type": "unified_exec",
             "visibility": "list",
             "supported_in_api": true,
             "priority": 5,
             "upgrade": null,
             "base_instructions": "You are a coding assistant. Inspect the relevant files, make focused changes, and verify your work. Use the provided tools when needed.",
-            "supports_reasoning_summaries": false,
+            "supports_reasoning_summaries": true,
             "support_verbosity": false,
             "truncation_policy": {
                 "mode": "tokens",
